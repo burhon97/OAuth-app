@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router";
 import "./App.css";
 
 function App() {
+  const handleGoogleLogin = () => {
+    window.location.href = "http://localhost:5005/auth/google";
+  };
   const handleGitHubLogin = () => {
     window.location.href = "http://localhost:5005/auth/github";
   };
@@ -14,6 +17,9 @@ function App() {
           element={
             <div className="sign-in">
               <h1>Sign in with GitHub (Test Demo)</h1>
+              <button className="sign-in-button" onClick={handleGoogleLogin}>
+                Sign in with Google
+              </button>
               <button className="sign-in-button" onClick={handleGitHubLogin}>
                 Sign in with Github
               </button>
