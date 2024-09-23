@@ -10,8 +10,6 @@ const app = express();
 const googlecallbackURL = `http://localhost:${Config.port}/auth/google/callback`;
 const githubCallbackURL = `http://localhost:${Config.port}/auth/github/callback`;
 
-//---------------------------------------------------
-
 // Session configuration
 app.use(
   session({
@@ -62,9 +60,6 @@ passport.use(
       callbackURL: googlecallbackURL,
     },
     function (accessToken, refreshToken, profile, done) {
-      console.log("accessToken", accessToken);
-      console.log("profile", profile);
-
       // Save user profile in session or database
       // todo logic here
 
@@ -95,7 +90,6 @@ app.get(
 // Authentication with GitHub
 // ----------------------------------------------------
 
-// GitHub authentication route
 app.get(
   "/auth/github",
   passport.authenticate("github", { scope: ["user:email"] })

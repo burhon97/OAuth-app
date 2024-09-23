@@ -38,6 +38,16 @@ Create a Google client ID and client secret:
 
 Create a Github client ID and client secret:
 
+1. Go to [Github Developer Settings](https://github.com/settings/developers)
+2. Click on `Register a new application` button.
+3. Fill `OAuth application` information:
+   - Fill `Application name`
+   - Fill `Homepage URL`
+   - Fill `Authorization callback URL` with `http://localhost:5005/auth/github/callback`
+4. Click `Register application` button.
+5. Copy the generated `client ID` to `GITHUB_CLIENT_ID` environment variable and 
+click on `Generate a new client secret` button for generating client secret, then copy the generated `client secret` to `GITHUB_CLIENT_SECRET` environment variable.
+
 ## Running the Server
 
 Compile the server:
