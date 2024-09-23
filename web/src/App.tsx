@@ -16,7 +16,7 @@ function App() {
           path="/"
           element={
             <div className="sign-in">
-              <h1>Sign in with GitHub (Test Demo)</h1>
+              <h1 className="title">OAuth App (Test Demo)</h1>
               <button className="sign-in-button" onClick={handleGoogleLogin}>
                 Sign in with Google
               </button>
@@ -28,7 +28,7 @@ function App() {
         />
         <Route
           path="/profile"
-          element={<div className="dashboard">Hello User</div>}
+          element={<div className="profile">Wellcome to profile User</div>}
         />
       </Routes>
     </div>

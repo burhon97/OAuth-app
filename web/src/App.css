@@ -13,6 +13,13 @@ body {
   background-color: #f0f0f0;
 }
 
+.title {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .sign-in-button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -22,10 +29,11 @@ body {
   cursor: pointer;
 }
 
-.dashboard {
+.profile {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: x-large;
   background-color: #f0f0f0;
 }
