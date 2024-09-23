@@ -1,14 +1,6 @@
-# Server Sing In With Google and Github
+# OAuth App (Server)
 
 This is the server part of the sing in with Google and Github example.
-
-## Installation
-
-Get the directory `cd server` and install the dependencies:
-
-```bash
-npm install
-```
 
 ## Configuration
 
@@ -45,8 +37,16 @@ Create a Github client ID and client secret:
    - Fill `Homepage URL`
    - Fill `Authorization callback URL` with `http://localhost:5005/auth/github/callback`
 4. Click `Register application` button.
-5. Copy the generated `client ID` to `GITHUB_CLIENT_ID` environment variable and 
-click on `Generate a new client secret` button for generating client secret, then copy the generated `client secret` to `GITHUB_CLIENT_SECRET` environment variable.
+5. Copy the generated `client ID` to `GITHUB_CLIENT_ID` environment variable and
+   click on `Generate a new client secret` button for generating client secret, then copy the generated `client secret` to `GITHUB_CLIENT_SECRET` environment variable.
+
+## Installation
+
+Get the directory `cd server` and install the dependencies:
+
+```bash
+npm install
+```
 
 ## Running the Server
 
